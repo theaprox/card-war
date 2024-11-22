@@ -21,29 +21,29 @@ The program MUST adhere to **OOP** *(Object-Oriented Programming)* and **SRP** *
 #### 2. Clone `dev` branch from git repository using:
 
 ```bash
-git clone -b dev --single-branch https://github.com/theaprox/card-war.git
+git clone -b <branch_name> --single-branch <https://github.com/theaprox/card-war.git>
 ```
 
 This will create a new folder in your project directory called "card-war".
 
 > [!IMPORTANT]
-> You'll need to create a new branch for each "issue" in [issues](https://github.com/theaprox/card-war/issues)
+> You'll need to replace `<branch_name>` with a dedicated branch for each "issue" in [issues](https://github.com/theaprox/card-war/issues). You can find connected branches in issue description
 >
 > **EXAMPLE:**
-> To work on "issue #2" you'd need to create an "issues/2-deck-module" branch.
+> To work on "issue #2" you'd need to pull an "issues/2-deck-module" branch.
 
 #### 3. Work on the dedicated branch
 
 -   **step 1:** Asign yourself or ask to be asigned to an open/todo ticket before starting any work.
 
--   **step 2:** Develop a feature/issue on your dedicated branch and publish it (the branch) to git repository.
+-   **step 2:** Develop a feature/issue on your dedicated branch and push it (the branch) to git repository.
 
 -   **step 3:** Create a *Pull Request* asking to merge your `issue...` branch to `dev`.
 > [!CAUTION]
-> You **DO NOT** need to review, fix or confirm PR requests.
+> You **DO NOT** need to review, fix or confirm pull requests, only submit them.
 
 #### 4. Completion
 
-Mark a ☑️ for each segment/step complete in the *issue* you work on. If you managed to resolve an entire ticket - mark it with `done` in the project view.
+Before submitting a PR mark a ☑️ for each segment/step complete in the *issue* you work on. Only submit a PR if you managed to resolve an entire ticket. After review and merge it will be marked as `done` in the [project backlog](theaprox/projects/4/views/1) view.
 
 Once done (your hour of programming is over) - go through with a 5-10 min stand-up regarding your work.
