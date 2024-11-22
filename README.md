@@ -1,7 +1,5 @@
 # Card game "War" in Python
 
-## Project description
-
 Create a card game **War** (aka. **Battle** in the UK) using **python**.
 
 The program MUST adhere to **OOP** _(Object-Oriented Programming)_ and **SRP** _(Single Responsibility Principle)_ programming principles.
