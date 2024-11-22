@@ -1,12 +1,11 @@
 # Card game "War" in Python
 
-## Project description
-
 Create a card game **War** (aka. **Battle** in the UK) using **python**.
 
 The program MUST adhere to **OOP** _(Object-Oriented Programming)_ and **SRP** _(Single Responsibility Principle)_ programming principles.
 
-> [!NOTE] > **Game logic for German variant [Bettelmann](https://en.wikipedia.org/wiki/Bettelmann)**
+> [!NOTE]
+> Game logic for German variant [Bettelmann](https://en.wikipedia.org/wiki/Bettelmann)
 >
 > -   Only 2-player game.
 > -   Use 32-card deck **7, 8, 9, 10, J, Q, K, A** of **♠️, ♦️, ♣️, ♥️**.
@@ -30,20 +29,21 @@ This will create a new folder in your project directory called "card-war".
 > [!IMPORTANT]
 > You'll need to create a new branch for each "issue" in [issues](https://github.com/theaprox/card-war/issues)
 >
-> `**Example:** To work on "issue #2 - Build Deck Module" you'd need to create a 'issues/2-deck-module"`
+> **EXAMPLE:**
+> To work on "issue #2" you'd need to create an "issues/2-deck-module" branch.
 
 #### 3. Work on the dedicated branch
 
 -   **step 1:** Asign yourself or ask to be asigned to an open/todo ticket before starting any work.
 
--   **step 2:** Develop a feature/issue on your dedicated branch and publish it (the branch) to git repo
+-   **step 2:** Develop a feature/issue on your dedicated branch and publish it (the branch) to git repository.
 
 -   **step 3:** Create a _Pull Request_ asking to merge your `issue...` branch to `dev`.
-    > [!NOTE]
-    > You **DO NOT** need to review, fix or confirm PR requests.
+> [!CAUTION]
+> You **DO NOT** need to review, fix or confirm PR requests.
 
 #### 4. Completion
 
-Mark a ☑️ for each segment/step complete in the _issue_ you work on.
+Mark a ☑️ for each segment/step complete in the _issue_ you work on. If you managed to resolve an entire ticket - mark it with `done` in the project view.
 
-If you managed to resolve an entire ticket - mark it with `done` in the project view.
+Once done (your the hour of programming is over) - go through with a 5-10 min stand-up regarding your work.
