@@ -41,6 +41,7 @@ This will create a new folder in your project directory called "card-war".
 -   **step 2:** Develop a feature/issue on your dedicated branch and publish it (the branch) to git repo
 
 -   **step 3:** Create a _Pull Request_ asking to merge your `issue...` branch to `dev`.
+
     > [!CAUTION]
     > You **DO NOT** need to review, fix or confirm PR requests.
 
