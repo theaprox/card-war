@@ -2,21 +2,21 @@
 
 Create a card game **War** (aka. **Battle** in the UK) using **python**.
 
-The program MUST adhere to **OOP** _(Object-Oriented Programming)_ and **SRP** _(Single Responsibility Principle)_ programming principles.
+The program MUST adhere to **OOP** *(Object-Oriented Programming)* and **SRP** *(Single Responsibility Principle)* programming principles.
 
 > [!NOTE]
 > Game logic for German variant [Bettelmann](https://en.wikipedia.org/wiki/Bettelmann)
 >
 > -   Only 2-player game.
 > -   Use 32-card deck **7, 8, 9, 10, J, Q, K, A** of **♠️, ♦️, ♣️, ♥️**.
-> -   Cards rank in their natural order _(high -> low)_ **A, K, Q, J, 10, 9,...**.
+> -   Cards rank in their natural order *(high -> low)* **A, K, Q, J, 10, 9,...**.
 > -   Each player starts with 16 cards (face down).
 > -   Players reveal cards at the same time and the higher card wins, if the cards are equal players draw again. Winner takes all cards and puts them aside.
 > -   Player with the most cards wins.
 
 ## Collaboration instructions
 
-#### 1. Go to `<your project directory>` and open a terminal _(cmd, shell, bash...)_
+#### 1. Go to `<your project directory>` and open a terminal *(cmd, shell, bash...)
 
 #### 2. Clone `dev` branch from git repository using:
 
@@ -38,12 +38,12 @@ This will create a new folder in your project directory called "card-war".
 
 -   **step 2:** Develop a feature/issue on your dedicated branch and publish it (the branch) to git repository.
 
--   **step 3:** Create a _Pull Request_ asking to merge your `issue...` branch to `dev`.
+-   **step 3:** Create a *Pull Request* asking to merge your `issue...` branch to `dev`.
 > [!CAUTION]
 > You **DO NOT** need to review, fix or confirm PR requests.
 
 #### 4. Completion
 
-Mark a ☑️ for each segment/step complete in the _issue_ you work on. If you managed to resolve an entire ticket - mark it with `done` in the project view.
+Mark a ☑️ for each segment/step complete in the *issue* you work on. If you managed to resolve an entire ticket - mark it with `done` in the project view.
 
-Once done (your the hour of programming is over) - go through with a 5-10 min stand-up regarding your work.
+Once done (your hour of programming is over) - go through with a 5-10 min stand-up regarding your work.
