@@ -64,7 +64,7 @@ Building a command-line implementation of the card game "War" German  "Bettelman
 
 Before proceeding with any of the steps bellow, please read through the entire section.
 
-Then view [project view](/users/theaprox/projects/4/views/1) to see which tickets are available (marked with `ready` status). Pick one ticket and read through the issue docs - there you'll find all necessary information regarding how and what is expected to be done.
+Then view [project page](https://github.com/users/theaprox/projects/4/views/1) to see which tickets are available (marked with `ready` status). Pick one ticket and read through the issue docs - there you'll find all necessary information regarding how and what is expected to be done.
 
 #### 1. Go to `<your project directory>` and open a terminal *(cmd, shell, bash...)*
 
