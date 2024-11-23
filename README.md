@@ -13,7 +13,7 @@ Building a command-line implementation of the card game "War" German  "Bettelman
 > - 32-card deck (7, 8, 9, 10, J, Q, K, A in ♠️, ♦️, ♣️, ♥️)
 > - Cards rank: A (high) → 7 (low)
 > - Each player gets 16 cards face down
-> - Players reveal cards simultaneously
+> - Players reveal cards simultaneously (one at a time)
 > - Higher card wins the round
 > - Tied cards trigger additional draws until someone wins
 > - Won cards go to winner's stash (not replayable)
@@ -35,33 +35,34 @@ Building a command-line implementation of the card game "War" German  "Bettelman
 **Project directory structure:**
 *(ubject to change during development)*
 ```
-└── src
-    └── actor
-        └── __init__.py
-        └── Player.py
-    └── item
-        └── __init__.py
-        └── Card.py
-        └── Deck.py
-        └── ItemTemplate.py
-    └── itemcontainer
-        └── __init__.py
-        └── Inventory.py
-        └── PlayerInventory.py
-    └── __init__.py
-└── tests
-└── .gitignore
-└── LICENSE
-└── ROADMAP.md
-└── README.md
-└── war.py
+├── src/
+│   ├── __init__.py
+│   ├── actor/
+│   │   ├── __init__.py
+│   │   └── Player.py               # Milestone 3, Issue 3.1
+│   ├── item/
+│   │   ├── __init__.py
+│   │   ├── ItemTemplate.py         # Milestone 1, Issue 1.1
+│   │   ├── Card.py                 # Milestone 2, Issue 2.1
+│   │   └── Deck.py                 # Milestone 2, Issue 2.2
+│   └── itemcontainer/
+│       ├── __init__.py
+│       ├── Inventory.py            # Milestone 1, Issue 1.2
+│       └── PlayerInventory.py      # Milestone 1, Issue 1.2
+├── tests/                          # Unit tests, Milestone 4...
+├── .gitignore
+├── LICENSE
+├── README.md                       # Update per milestone
+├── ROADMAP.md                      # Update per milestone
+├── roadmap.md                      # Created & update per milestone
+└── war.py                          # Milestone 3, Issue 3.2 & Milestone 4, Issue 4.1
 ```
 
 <br><br>
 
 ## Collaboration instructions
 
-#### 1. Go to `<your project directory>` and open a terminal *(cmd, shell, bash...)
+#### 1. Go to `<your project directory>` and open a terminal *(cmd, shell, bash...)*
 
 #### 2. Clone `dev` branch from git repository using:
 
@@ -91,6 +92,6 @@ This will create a new folder in your project directory called "card-war".
 
 #### 4. Completion
 
-Before submitting a PR mark a ☑️ for each segment/step complete in the *issue* you work on. Only submit a PR if you managed to resolve an entire ticket. After review and merge it will be marked as `done` in the [project backlog](theaprox/projects/4/views/1) view.
+Mark a ☑️ for each segment/step complete in the *issue* you work on. Only submit a PR if you managed to resolve an entire ticket. After review and merge it will be marked as `done` in the [project backlog](theaprox/projects/4/views/1) view.
 
 Once done (your hour of programming is over) - go through with a 5-10 min stand-up regarding your work.
