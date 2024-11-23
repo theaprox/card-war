@@ -70,21 +70,58 @@ Then view [project view](/users/theaprox/projects/4/views/1) to see which ticket
 
 #### 2. Clone `dev` branch from git repository using:
 
-Use the following **git-bash** command template to chekout an issue-specific branch (found on each issue/ticket page)
+Use the following command template to chekout an issue-specific branch (found on each issue/ticket page)
 
 ```bash
-git clone -b <branch_name> --single-branch <https://github.com/theaprox/card-war.git>
+git clone -b <branch_name> --single-branch https://github.com/theaprox/card-war.git
 ```
 
 This will create a new folder in your project directory called "card-war".
+From this point any `git` commands should be run from within the **card-war** directory.
 
 > [!IMPORTANT]
 > You'll need to replace `<branch_name>` with a dedicated branch for each "issue" in [issues](https://github.com/theaprox/card-war/issues). You can find connected branches in issue description
 >
 > **EXAMPLE:**
-> To work on "issue #2" you'd need to pull an "issues/2-deck-module" branch.
+> To work on "Issue 1.1" you'd need to pull an "milestone/1-core/issue-1-item-template" branch.
 
-#### 3. Work on the dedicated branch
+#### 3. Sync changes from `Dev` to `<issue_branch>`
+
+before doing any actual work you should fetch and sync any and all changes from the `dev` branch to your locally cloned issue-specific branch.
+
+**You can do so in a few steps**
+
+1. Fetch `dev` branch for syncing:
+```bash
+git fetch origin dev:dev
+```
+
+2. Make sure you are on the specific issue branch `<branch_name>`:
+```bash
+git checkout <branch_name>
+```
+
+3. Merge from `dev` to `<branch_name>`:
+```bash
+git merge dev
+```
+> [!CAUTION]
+> If you encounter merge conflicts during step 3, please:
+> - Stop the process immediately
+> - DO NOT push any changes
+> - Contact the project maintainer
+
+4. Sync updated `<branch_name>` to remote *(origin)*:
+```bash
+git push origin HEAD
+```
+
+5. Remove `dev` branch from local repo to avoid confusion and errors:
+```bash
+git branch -d dev
+```
+
+#### 4. Work on the dedicated branch
 
 -   **step 1:** Asign yourself or ask to be asigned to an open/todo ticket before starting any work.
 
@@ -94,7 +131,7 @@ This will create a new folder in your project directory called "card-war".
 > [!CAUTION]
 > You **DO NOT** need to review, fix or confirm pull requests, only submit them.
 
-#### 4. Completion
+#### 5. Completion
 
 Mark a ☑️ for each segment/step complete in the *issue* you work on. Only submit a PR if you managed to resolve an entire ticket. After review and merge it will be marked as `done` in the [project backlog](theaprox/projects/4/views/1) view.
 
