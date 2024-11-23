@@ -1,24 +1,71 @@
-# Card game "War" in Python
+# War Card Game - Project
 
-Create a card game **War** (aka. **Battle** in the UK) using **python**.
-
-The program MUST adhere to **OOP** *(Object-Oriented Programming)* and **SRP** *(Single Responsibility Principle)* programming principles.
+Building a command-line implementation of the card game "War" German  "Bettelmann" variant focusing on:
+- Object-Oriented Programming principles
+- Single Responsibility Principle
+- Clean, simple syntax
+- Dataclass usage where appropriate
+- Testable components
+- Collaborative development workflow
 
 > [!NOTE]
-> Game logic for German variant [Bettelmann](https://en.wikipedia.org/wiki/Bettelmann)
->
-> -   Only 2-player game.
-> -   Use 32-card deck **7, 8, 9, 10, J, Q, K, A** of **♠️, ♦️, ♣️, ♥️**.
-> -   Cards rank in their natural order *(high -> low)* **A, K, Q, J, 10, 9,...**.
-> -   Each player starts with 16 cards (face down).
-> -   Players reveal cards at the same time and the higher card wins, if the cards are equal players draw again. Winner takes all cards and puts them aside.
-> -   Player with the most cards wins.
+> - 2-player card game
+> - 32-card deck (7, 8, 9, 10, J, Q, K, A in ♠️, ♦️, ♣️, ♥️)
+> - Cards rank: A (high) → 7 (low)
+> - Each player gets 16 cards face down
+> - Players reveal cards simultaneously
+> - Higher card wins the round
+> - Tied cards trigger additional draws until someone wins
+> - Won cards go to winner's stash (not replayable)
+> - Most cards in stash wins
+
+<br><br>
+
+## Development Strategy
+
+> [!TIP]
+> View **[Roadmap.md](/ROADMAP.md)** for more context and project development flow.
+
+- Each milestone has dedicated branch `<milestone-name>`
+- Issues branch from milestone: `<milestone-name>/<issue-n-name>`
+- Pull requests required for merging
+- Code review before merge
+- Unit tests for completed modules
+
+**Project directory structure:**
+*(ubject to change during development)*
+```
+└── src
+    └── actor
+        └── __init__.py
+        └── Player.py
+    └── item
+        └── __init__.py
+        └── Card.py
+        └── Deck.py
+        └── ItemTemplate.py
+    └── itemcontainer
+        └── __init__.py
+        └── Inventory.py
+        └── PlayerInventory.py
+    └── __init__.py
+└── tests
+└── .gitignore
+└── LICENSE
+└── ROADMAP.md
+└── README.md
+└── war.py
+```
+
+<br><br>
 
 ## Collaboration instructions
 
 #### 1. Go to `<your project directory>` and open a terminal *(cmd, shell, bash...)
 
 #### 2. Clone `dev` branch from git repository using:
+
+Use the following **git-bash** command template to chekout an issue-specific branch (found on each issue/ticket page)
 
 ```bash
 git clone -b <branch_name> --single-branch <https://github.com/theaprox/card-war.git>
