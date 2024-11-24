@@ -1,6 +1,10 @@
 # War Card Game - Project
 
-Building a command-line implementation of the card game "War" German  "Bettelmann" variant focusing on:
+[![Python 3.12.7](https://img.shields.io/badge/python-green?style=for-the-badge&logo=python&labelColor=grey&logoColor=blue)](https://www.python.org/downloads/release/python-3127/ "Python 3.12.7")
+
+<br>
+
+Building a command-line implementation of the card game "War" German  "Bettelmann" variant using **Python 3.12.7** *(or later)* and <ins>focusing on</ins>:
 - Object-Oriented Programming principles
 - Single Responsibility Principle
 - Clean, simple syntax
