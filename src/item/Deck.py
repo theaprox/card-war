@@ -2,18 +2,27 @@
 Main deck object, holds cards and can be shuffled
 """
 
+import random
 from dataclasses import dataclass
-from typing import List, Any
+from src.item.card import Card
+from typing import List
 
 @dataclass
 class Deck:
-    _cards: List[Any]
     
-    def __init__(self):
-        self.cards = self._cards
+    def __init__(self, cards: List[Card]):
+        """Constructor for Deck object."""
+        self._cards = cards
         
-    def shuffle(self):
-        import random
-        random.shuffle(self.cards)
+    @property
+    def cards(self) -> list:
+        """Return the list of cards in the deck."""
+        return self._cards
+    
+    @property
+    def size(self) -> int:
+        """Return the number of cards in the deck."""
+        return len(self._cards)
+    
         
     

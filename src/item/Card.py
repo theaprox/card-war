@@ -10,14 +10,12 @@ from dataclasses import dataclass
 @dataclass
 class Card:
     """Main card object, holds card rank, card suit, card value. Handles all card operations and behabior."""
-    suit: Suit
-    rank: CardRank
     
-    def __init__(self, suit: Suit, rank: CardRank) -> None:
+    def __init__(self, rank: CardRank,  suit: Suit) -> None:
         """Constructor for Card object."""
         # primary arguments
-        self._suit = suit.value
         self._rank = rank.value
+        self._suit = suit.value
         
     @property
     def name(self) -> str:
@@ -49,8 +47,6 @@ class Card:
         """Card value getter."""
         return self._rank["value"]
     
-    def __str__(self) -> str:
-        return f"{self.rank} of {self.suit}"
+    def __str__(self):
+        return f"{self.rank_symbol} {self.suit_symbol}".center(6)
     
-    def __repr__(self):
-        return f"{self.suit} of {self.rank}"
